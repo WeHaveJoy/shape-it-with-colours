@@ -57,7 +57,7 @@ app.use(bodyParser.json())
 
 app.get('/', function(req, res){
 
-    res.render()
+    res.render("index")
 })
 
 app.get('/shapes-and-colours', function(req, res){
@@ -70,10 +70,10 @@ app.post('/shapes-and-colours', function(req, res){
     res.render('/shapes-and-colours')
 })
 
-// app.get('/results', function(req, res){
+app.get('/results', function(req, res){
 
-//     res.render()
-// })
+    res.render('results')
+})
 
 // app.post('/results', function(req, res){
 
